@@ -1,0 +1,28 @@
+﻿<Window x:Class="YouMed72.Rab.Frame.ZametkaDobavlenie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:YouMed72.Rab.Frame"
+        mc:Ignorable="d"
+        Title="ZametkaDobavlenie" Height="450" Width="800"  WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Border  Grid.RowSpan="2">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="Gray" Offset="0.0"/>
+                    <GradientStop Color="#3355aa" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Label Content="название заметки" HorizontalAlignment="Left" Margin="54,68,0,0"  VerticalAlignment="Top"/>
+        <Label Content="Дата" HorizontalAlignment="Left" Margin="57,126,0,0" VerticalAlignment="Top"/>
+        <Label Content="ID " HorizontalAlignment="Left" Margin="53,23,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="NAME" HorizontalAlignment="Left" Height="24" Margin="254,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        
+        <Button Click="save_Click" Content="Добавить" x:Name="save" HorizontalAlignment="Left" Margin="641,379,0,0" VerticalAlignment="Top" Width="97"/>
+        <Button Content="Назад" Click="back_Click" x:Name="back" HorizontalAlignment="Left" Margin="83,379,0,0" VerticalAlignment="Top" Width="75"/>
+        <ComboBox x:Name="Id_cat" HorizontalAlignment="Left" Margin="254,23,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="NAME" />
+        <TextBox x:Name="DATA" HorizontalAlignment="Left" Height="24" Margin="254,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
